@@ -1,0 +1,39 @@
+
+------------------------------------------------html file--------------------------------------
+<div *ngIf="listOfMachinery" class="required-ck-editor" fxLayout="row wrap" fxLayoutAlign="space-between center">
+                <ckeditor formControlName="listOfMachinery" required fxFlex="100%" fxFlex.xs="100%" fxFlex.sm="100%"
+                          [config]="minEditorConfig">
+		</ckeditor>
+</div>
+
+
+------------------------------------------------ts file----------------------------------------
+if (this.isEditorContentEmpty(listOfMachinery)) {
+            this.formSummary2.patchValue({
+                listOfMachinery: ''
+            });
+            this.formSummary2.markAllAsTouched();
+            this.snackBar.openWarnSnackBarWithMessage("You missed some required field, Please fill all the required field", "Ok");
+
+        } else {
+	//valid data save hare 
+	}
+
+
+
+// Function to check if CKEditor content is empty or contains only non-visible characters
+
+    isEditorContentEmpty(editorInstance) {
+        // Get the content from CKEditor instance
+        var editorContent = editorInstance;
+
+        // Regular expression to remove tags and non-visible characters
+        var cleanedContent = editorContent
+            .replace(/<[^>]+>/g, '')   // Remove HTML tags
+            .replace(/&nbsp;/g, '')    // Remove &nbsp;
+            .replace(/\s/g, '');       // Remove all whitespace characters (spaces, tabs, newlines)
+
+        // Check if the cleaned content is empty
+        return cleanedContent === '';
+    }
+-----------------------------------------------------------------------------------------------------------
