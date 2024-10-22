@@ -1,0 +1,36 @@
+
+Probleam
+--------------------------------
+##Explination
+*When I try to run my angular project with command like
+"ng serve --port 4400", it's through an error like given in the below.
+
+##Error
+An unhandled exception occurred: listen EACCES: permission denied 127.0.0.1:4400
+See "C:\Users\IBCS-P~1\AppData\Local\Temp\ng-MpAmGp\angular-errors.log" for further details.
+
+
+##Solution
+--------------
+Commands:
+	1. net stop winnat
+	2. net start winnat
+
+open cmd->
+go to project directory->
+write first command->net stop winnat
+GET SUCCESS MSG
+write second command->net start winnat
+GET SUCCESS MSG
+----DONE------
+
+
+##Example
+----------
+E:\Planning\pps\planning-idsdp-pps-frontend>net stop winnat
+
+The Windows NAT Driver service was stopped successfully.
+
+E:\Planning\pps\planning-idsdp-pps-frontend>net start winnat
+
+The Windows NAT Driver service was started successfully.
