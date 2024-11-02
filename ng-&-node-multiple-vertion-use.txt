@@ -1,0 +1,25 @@
+step-1:
+-------
+    Download-> Node Version Manager (nvm):
+        *Go to the nvm-windows GitHub repository.
+        *Scroll down to the Releases section, and download the latest nvm-setup.zip file.
+        *Extract the nvm-setup.zip file and run the nvm-setup.exe installer.
+        *Run the nvm-setup.exe installer.
+
+step-2:
+-------
+    Run the command-> nvm version
+        *Install a Specific Version of Node.js: (nvm install 16.16.0)exampally
+    Verify the Active Version:
+        *node -v
+    Switch to a Specific Node.js Version:
+        *nvm use 16.16.0
+    Verify the Active Version (again for checking):
+        *node -v 
+
+Additional Commands
+-------------------
+    List All Installed Node Versions
+        *nvm list 
+    Uninstall a Node Version
+        *nvm uninstall 16.16.0             
