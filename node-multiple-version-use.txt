@@ -9,11 +9,11 @@ step-1:
 step-2:
 -------
     Run the command-> nvm version
-        *Install a Specific Version of Node.js: (nvm install 16.16.0)exampally
+        *Install a Specific Version of Node.js: (nvm install 22.11.0) for example
     Verify the Active Version:
         *node -v
     Switch to a Specific Node.js Version:
-        *nvm use 16.16.0
+        *nvm use nvm use 22.11.0
     Verify the Active Version (again for checking):
         *node -v 
 
