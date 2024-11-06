@@ -1,0 +1,15 @@
+step-1
+------
+create a working directory for install local cli
+
+step-2
+------
+open terminal from working directory
+
+step-3
+------
+run this command-> npm install @angular/cli@16
+
+step-3
+------
+create new project-> ng new test-app --no-standalone
